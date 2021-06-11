@@ -26,32 +26,16 @@ for (let i = 0; i < questions.length; i++){
 candidateAnswer = input.question(questions[i]);
 candidateAnswers.push(candidateAnswer)
 } 
- //console.log(candidateAnswers);
-  //console.log(candidateAnswers.join(" "));
-//console.log(`1. ${questions[0]}`);
-  //console.log(`Your Answer: ${candidateAnswer}`);
-  //console.log(`Correct Answer: ${correctAnswer}`);
-  //console.log(`2. ${question2}`);
-  //console.log(`Your Answer: ${candidateAnswer}`);
-  //console.log(`Correct Answer: ${correctAnswer2}`)
-  //console.log(`3. ${question3}`);
-  //console.log(`Your Answer: ${candidateAnswer}`);
-  //console.log(`Correct Answer: ${correctAnswer3}`)
-  //console.log(`4. ${question4}`);
-  //console.log(`Your Answer: ${candidateAnswer}`);
-  //console.log(`Correct Answer: ${correctAnswer4}`)
-  //console.log(`5. ${question5}`);
-  //console.log(`Your Answer: ${candidateAnswer}`);
-  //console.log(`Correct Answer: ${correctAnswer5}`)
+ console.log(candidateAnswers);
 }
 
 // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 function gradeQuiz(candidateAnswers) {
 for (i = 0; i <questions.length; i++){
 if (candidateAnswers[i] === correctAnswers[i])  {
-    console.log(`You answered '${candidateAnswers[i]}'.  That's correct!`)
+   console.log(`${i+1}. ${questions[i]} \nYou answered ${candidateAnswers[i]}. \nThat's correct! \n\n`)
   } else {
-    console.log(`You answered '${candidateAnswers[i]}'.  Incorrect. ${correctAnswers[i]} is the correct answer.`)
+    console.log(`${i+1}. ${questions[i]} \nYou answered '${candidateAnswers[i]}'.  \nIncorrect. ${correctAnswers[i]} is the correct answer. \n\n`)
   }
 }
   let grade;
