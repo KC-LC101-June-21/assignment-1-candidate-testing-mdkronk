@@ -44,14 +44,13 @@ if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase())  {
   
 let grade = (numOfCorrectAnswers/correctAnswers.length)*100;
 
-//let percentage = 
-  
+
 //return grade;
  if (grade >= 50) {
-console.log(`>>> Overall Grade: ${grade}% (${numOfCorrectAnswers} out of 5 correct.)>>>\n>>> Status: PASSED <<<`);
+console.log(`>>> Overall Grade: ${grade}% (${numOfCorrectAnswers} out of 5 correct) <<<\n>>> Status: PASSED <<<`);
 } else {
 console.log() 
-  console.log(`>>> Overall Grade: ${grade}% (${numOfCorrectAnswers} out of 5 correct.>>>\n>>> Status: FAILED <<<`);
+  console.log(`>>> Overall Grade: ${grade}% (${numOfCorrectAnswers} out of 5 correct) <<<\n>>> Status: FAILED <<<`);
 }
 }
 function runProgram() {
