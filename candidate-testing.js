@@ -13,7 +13,6 @@ let candidateAnswer = (" ");
 let questions = ["Who was the first American woman in space? ", "True or false: 5 kilometer == 5000 meters? ", "(5 + 3)/2 * 10 = ? ", "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ", "What is the minimum crew size for the ISS? "];
 let correctAnswers = ["Sally Ride", "true", "40", "Trajectory", "3"];
 let candidateAnswers = [];
-let numOfCorrectAnswers = 0;
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
@@ -31,6 +30,7 @@ function askQuestion(questions) {
 
 // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 function gradeQuiz(candidateAnswers) {
+  let numOfCorrectAnswers = 0;
   for (i = 0; i < questions.length; i++) {
     if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
       numOfCorrectAnswers++;
